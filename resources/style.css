@@ -1,0 +1,23 @@
+#title {
+	-fx-font-style: italic;
+	-fx-font-weight: bold;
+}
+
+.button {
+	-fx-font: 15px "Serif";
+}
+
+#mapLabel {
+	-fx-font-weight: bold;
+}
+
+#standByLabel {
+	-fx-font-weight: bold;
+}
+
+.menu {
+	-fx-font-style: italic;
+}
+
+
+

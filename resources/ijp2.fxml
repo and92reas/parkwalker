@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="ijp2.view.MainView">
+  <children>
+    <AnchorPane fx:id="MainAnchorPane" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <Pane fx:id="OtherActionPane" layoutX="0.0" layoutY="0.0" prefHeight="400.0" prefWidth="71.0">
+          <children>
+            <Pane fx:id="MainImagePane" layoutX="124.0" layoutY="1.0" prefHeight="400.0" prefWidth="340.0" style="">
+              <children>
+                <ImageView id="MainImage" fx:id="mainImage" fitHeight="297.0832824707031" fitWidth="396.1111287998575" layoutX="-14.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true" rotate="90.0" />
+                <ImageView id="StandByImage" fx:id="standByItemImage" fitHeight="100.5" fitWidth="134.0" layoutX="-103.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true" />
+                <ImageView id="placedItemID" fx:id="placedItemImage" fitHeight="81.0" fitWidth="108.0" layoutX="140.0" layoutY="221.0" pickOnBounds="true" preserveRatio="true" />
+                <MenuBar fx:id="Menu" layoutX="-123.0" layoutY="21.0" minWidth="71.0000061035156" prefWidth="148.0000061035156">
+                  <menus>
+                    <Menu styleClass = "menu" mnemonicParsing="false" text="Handle" fx:id="handleItem">
+                      <items>
+                        <MenuItem mnemonicParsing="false" text="Place to image" fx:id="placeItem" />
+                        <MenuItem mnemonicParsing="false" text="Get from image" fx:id="getItem" />
+                        <MenuItem mnemonicParsing="false" text="Discard" fx:id="discardItem" />
+                        <MenuItem mnemonicParsing="false" text="Close" />
+                      </items>
+                    </Menu>
+                    <Menu styleClass = "menu" mnemonicParsing="false" text="Choose" fx:id="chooseItem">
+                      <items>
+                        <MenuItem mnemonicParsing="false" text="Ball" fx:id="ballChoice" />
+                        <MenuItem mnemonicParsing="false" text="Fruit" fx:id="fruitChoice" />
+                        <MenuItem mnemonicParsing="false" text="Squirrel" fx:id="squirrelChoice" />
+                      </items>
+                    </Menu>
+                  </menus>
+                </MenuBar>
+                <Label id="title" layoutX="-85.0" layoutY="0.0" prefHeight="18.132919311523438" prefWidth="138.0" style="font-style: italic;" text="ParkWalker" />
+                <Label id="standByLabel" fx:id="standByItemLabel" layoutX="-91.0" layoutY="275.0" prefHeight="18.132919311523438" prefWidth="108.0" style="" text="Held Item" />
+                <Pane layoutX="-120.0" layoutY="62.0" prefHeight="200.0" prefWidth="120.0">
+                  <children>
+                    <ImageView id="location6ID" fx:id="northwest" fitHeight="58.0" fitWidth="78.0" layoutX="-2.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" />
+                    <ImageView id="location3ID" fx:id="northeast" fitHeight="58.0" fitWidth="78.0" layoutX="73.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" />
+                    <ImageView id="location5ID" fx:id="west" fitHeight="58.0" fitWidth="78.0" layoutX="-1.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true" />
+                    <ImageView id="location2ID" fx:id="east" fitHeight="58.0" fitWidth="78.0" layoutX="73.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true" />
+                    <ImageView id="location1ID" fx:id="southeast" fitHeight="58.0" fitWidth="78.0" layoutX="73.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true" />
+                    <ImageView id="location4ID" fx:id="southwest" fitHeight="58.999908447265625" fitWidth="78.66654459635416" layoutX="-2.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true" />
+                    <Label fx:id="mapLabel" layoutX="52.0" layoutY="0.0" text="Map" />
+                  </children>
+                </Pane>
+              </children>
+            </Pane>
+          </children>
+        </Pane>
+        <Pane id="directionPane" fx:id="MovementPane" layoutX="463.0" layoutY="0.0" prefHeight="400.0" prefWidth="138.0">
+          <children>
+            <Button id="LookUpButton" fx:id="lookUpButton" layoutX="26.0" layoutY="14.0" mnemonicParsing="false" styleClass="button" text="Look up" />
+            <Button id="MoveForwardButton" fx:id="moveForwardButton" layoutX="35.0" layoutY="125.0" mnemonicParsing="false" styleClass="button" text="Move" />
+            <Button fx:id="turnRightButton" layoutX="73.0" layoutY="220.0" mnemonicParsing="false" styleClass="button" text="Right" />
+            <Button id="TurnLeftButton" fx:id="turnLeftButton" layoutX="-4.0" layoutY="220.0" mnemonicParsing="false" styleClass="button" text="Left" />
+            <Button fx:id="turnBackButton" layoutX="36.0" layoutY="263.0" mnemonicParsing="false" styleClass="button" text="Back" />
+            <Button id="LookDownButton" fx:id="lookDownButton" layoutX="18.0" layoutY="366.0" mnemonicParsing="false" styleClass="button" text="Look down" />
+          </children>
+        </Pane>
+      </children>
+    </AnchorPane>
+  </children>
+</AnchorPane>
